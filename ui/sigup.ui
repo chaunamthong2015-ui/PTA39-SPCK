@@ -25,12 +25,19 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">color:</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <property name="styleSheet">
+    <string notr="true">color: #F6850C ;
+background-color: #39B1D1 ;</string>
+   </property>
+   <widget class="QLabel" name="title">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>20</y>
+      <x>11</x>
+      <y>54</y>
       <width>250</width>
       <height>50</height>
      </rect>
@@ -59,9 +66,7 @@
      <enum>Qt::LeftToRight</enum>
     </property>
     <property name="styleSheet">
-     <string notr="true"># label:
-	color : rgb(255, 29, 176)
-</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string>Welcome back!</string>
@@ -73,8 +78,8 @@
    <widget class="QLabel" name="text_edit">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>120</y>
+      <x>11</x>
+      <y>144</y>
       <width>100</width>
       <height>30</height>
      </rect>
@@ -104,8 +109,8 @@
    <widget class="QLabel" name="text_edit_2">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>280</y>
+      <x>11</x>
+      <y>294</y>
       <width>150</width>
       <height>30</height>
      </rect>
@@ -135,8 +140,8 @@
    <widget class="QLineEdit" name="fullname">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>180</y>
+      <x>11</x>
+      <y>219</y>
       <width>780</width>
       <height>30</height>
      </rect>
@@ -146,6 +151,100 @@
       <width>780</width>
       <height>30</height>
      </size>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="password">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>369</y>
+      <width>780</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>780</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="signup">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>444</y>
+      <width>778</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>778</width>
+      <height>29</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>778</width>
+      <height>29</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Black</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Sign up</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../assets/icons/icons8-register-60.png</normaloff>../assets/icons/icons8-register-60.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nav_login">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>518</y>
+      <width>778</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>778</width>
+      <height>29</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>778</width>
+      <height>29</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Black</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Login here!</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../assets/icons/icons8-login-60.png</normaloff>../assets/icons/icons8-login-60.png</iconset>
     </property>
    </widget>
   </widget>
