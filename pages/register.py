@@ -5,40 +5,46 @@ import os
 import re
 
 # mock data
-account = {"fullname": "Nguyen Van A", "email": "abc@gmail.com", "password": "1234567"}
+account = {"fullname": "", "email": "", "password": "", "comfirm_password": ""}
 
 
-class LoginPage(QMainWindow):
+class SignupPage(QMainWindow):
     def __init__(self, main_window, root_dir):
         super().__init__()  # ke thua cac code init cua lop cha
         self.main_window = main_window  # luu tham so
         self.root_dir = root_dir
 
         # load file ui
-        ui_path = self.root_dir + "/ui/login.ui"
+        ui_path = self.root_dir + "/ui/signup.ui"
         uic.loadUi(ui_path, self)
 
         # bat su kien cho cac nut bam
-        #1. nut login
-        self.login.clicked.connect(
-            self.handle_login
-        )  # click vao nut login -> goi ham handle_login
+        # 1. nut login
+        self.signup.clicked.connect(
+            self.handle_register
+        )  # click vao nut login -> goi ham handle_register
         # 2. nut chuyen register
-        self.nav_register.clicked.connect(
-            self.goto_register
-        )  # click vao nut chuyen register -> goi ham goto_register
+        self.nav_login.clicked.connect(
+            self.goto_login
+        )  # click vao nut chuyen register -> goi ham goto_login
 
         # chay app
         self.show()
 
     # ------------------ xu ly su kien ------------------
-    def handle_login(self):
+    def handle_register(self):
         # lay du lieu tu input form
         email_input = (
             self.email.text().strip()
-        )   # lay du lieu tu email input, xoa khoang trang 2 dau
+        )  # lay du lieu tu email input, xoa khoang trang 2 dau
         password_input = self.password.text()
-        
+        fullname_input = self.full_name.text()
+
+        # kiem tra fullname
+        if fullname_input.strip() == "":
+            self.show_message("Vui lòng nhập đầy đủ họ tên!")
+            return  # bao loi -> ket thuc
+
         # validate du lieu
         if self.__validate_input(email_input, password_input) is not None:
             print(self.__validate_input(email_input, password_input))
@@ -46,21 +52,28 @@ class LoginPage(QMainWindow):
             self.show_message(self.__validate_input(email_input, password_input))
             return  # khong lam gi nua
         else:
+            # luu tai khoan
+            account["fullname"] = fullname_input
+            account["email"] = email_input
+            account["password"] = password_input
             # thanh cong -> chuyen sang home
             self.__goto_home()
 
-    def goto_register(self):
-        from pages.register import SignupPage
+    def goto_login(self):
+        from pages.login import LoginPage
 
-        self.register_page = SignupPage(
+        self.login_page = LoginPage(
             main_window=self.main_window, root_dir=self.root_dir
         )
         self.close()  # ✅ đóng cửa sổ
+
     # ------------------ ham ho tro ------------------
     def __goto_home(self):
         from pages.home import HomePage
 
-        self.home_page = HomePage(main_window=self.main_window, root_dir=self.root_dir, cur_acc=account)
+        self.home_page = HomePage(
+            main_window=self.main_window, root_dir=self.root_dir, cur_acc=account
+        )
         self.close()  # ✅ đóng cửa sổ
 
     def __validate_input(self, email, password):
@@ -72,10 +85,6 @@ class LoginPage(QMainWindow):
         # kiem tra password
         if len(password) < 6:
             return "Password phai tu 6 chu so tro len!"
-
-        # kiem tra khop tai khoan (mock data)
-        if email != account["email"] or password != account["password"]:
-            return "Email hoac password khong chinh xac!"
 
         return None  # khong co loi
     

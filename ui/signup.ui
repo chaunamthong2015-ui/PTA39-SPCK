@@ -26,25 +26,12 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true"># centralwidget :
-	background: rgb(5, 251, 255);</string>
+   <string notr="true">color:</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <property name="minimumSize">
-    <size>
-     <width>800</width>
-     <height>600</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>800</width>
-     <height>600</height>
-    </size>
-   </property>
    <property name="styleSheet">
-    <string notr="true">background-color: #39B1D1 ;
-color: #ED4D2D</string>
+    <string notr="true">color: #ED4D2D ;
+background-color: #39B1D1 ;</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
@@ -57,7 +44,7 @@ color: #ED4D2D</string>
       </property>
       <property name="maximumSize">
        <size>
-        <width>250</width>
+        <width>1000</width>
         <height>40</height>
        </size>
       </property>
@@ -73,12 +60,10 @@ color: #ED4D2D</string>
        <enum>Qt::LeftToRight</enum>
       </property>
       <property name="styleSheet">
-       <string notr="true">
-
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
-       <string>Welcome back!</string>
+       <string>Hello New friend!</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -86,27 +71,59 @@ color: #ED4D2D</string>
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="label_2">
+     <widget class="QLabel" name="text_edit">
       <property name="minimumSize">
        <size>
-        <width>135</width>
-        <height>50</height>
+        <width>100</width>
+        <height>30</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>135</width>
-        <height>50</height>
+        <width>1000</width>
+        <height>30</height>
        </size>
       </property>
       <property name="font">
        <font>
         <family>Arial Black</family>
-        <pointsize>16</pointsize>
+        <pointsize>15</pointsize>
        </font>
       </property>
-      <property name="styleSheet">
-       <string notr="true"/>
+      <property name="text">
+       <string>Name</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="fullname">
+      <property name="minimumSize">
+       <size>
+        <width>780</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="text_edit_4">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>1000</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>15</pointsize>
+       </font>
       </property>
       <property name="text">
        <string>Email</string>
@@ -114,59 +131,34 @@ color: #ED4D2D</string>
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="email">
+     <widget class="QLineEdit" name="email1">
       <property name="minimumSize">
        <size>
         <width>780</width>
         <height>30</height>
        </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>780</width>
-        <height>30</height>
-       </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: #fffff ;
-</string>
-      </property>
-      <property name="inputMask">
-       <string/>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="echoMode">
-       <enum>QLineEdit::Normal</enum>
-      </property>
-      <property name="readOnly">
-       <bool>false</bool>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="label_3">
+     <widget class="QLabel" name="text_edit_2">
       <property name="minimumSize">
        <size>
         <width>150</width>
-        <height>50</height>
+        <height>30</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>150</width>
-        <height>50</height>
+        <width>1000</width>
+        <height>30</height>
        </size>
       </property>
       <property name="font">
        <font>
         <family>Arial Black</family>
-        <pointsize>16</pointsize>
+        <pointsize>15</pointsize>
        </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
       </property>
       <property name="text">
        <string>Password</string>
@@ -181,17 +173,46 @@ color: #ED4D2D</string>
         <height>30</height>
        </size>
       </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="text_edit_3">
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>30</height>
+       </size>
+      </property>
       <property name="maximumSize">
+       <size>
+        <width>1000</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Comfirm password</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="comfirm_password">
+      <property name="minimumSize">
        <size>
         <width>780</width>
         <height>30</height>
        </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
-      <property name="inputMask">
-       <string/>
       </property>
       <property name="text">
        <string/>
@@ -199,13 +220,10 @@ color: #ED4D2D</string>
       <property name="echoMode">
        <enum>QLineEdit::Password</enum>
       </property>
-      <property name="readOnly">
-       <bool>false</bool>
-      </property>
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="login">
+     <widget class="QPushButton" name="signup">
       <property name="minimumSize">
        <size>
         <width>778</width>
@@ -221,50 +239,46 @@ color: #ED4D2D</string>
       <property name="font">
        <font>
         <family>Arial Black</family>
+        <pointsize>8</pointsize>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
-       <string>Login</string>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../assets/icons/icons8-login-60.png</normaloff>../assets/icons/icons8-login-60.png</iconset>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="nav_register">
-      <property name="minimumSize">
-       <size>
-        <width>778</width>
-        <height>29</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>778</width>
-        <height>29</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <family>Arial Black</family>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">
-</string>
-      </property>
-      <property name="text">
-       <string>Sign up here!</string>
+       <string>Sign up</string>
       </property>
       <property name="icon">
        <iconset>
         <normaloff>../assets/icons/icons8-register-60.png</normaloff>../assets/icons/icons8-register-60.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="nav_login">
+      <property name="minimumSize">
+       <size>
+        <width>778</width>
+        <height>29</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>778</width>
+        <height>29</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+       </font>
+      </property>
+      <property name="text">
+       <string>Login here!</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../assets/icons/icons8-login-60.png</normaloff>../assets/icons/icons8-login-60.png</iconset>
       </property>
      </widget>
     </item>
