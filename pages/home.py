@@ -23,11 +23,17 @@ class HomePage(QMainWindow):
         self.search.clicked.connect(
             self.goto_search
         )
+        self.details1.clicked.connect(
+            self.goto_details1
+        )
+        self.details2.clicked.connect(
+            self.goto_details2
+        )
         # hien thi giao dien
         self.show()
 
     # ------------------ xu ly su kien ------------------
-    # TODO
+ 
     # ------------------ ham ho tro ------------------
     def __show_message(self, message):
         # Khởi tạo hộp thoại thông báo

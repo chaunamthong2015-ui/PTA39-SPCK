@@ -45,7 +45,10 @@
        </size>
       </property>
       <property name="text">
-       <string>ICON</string>
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../assets/imgs/images.jpg</pixmap>
       </property>
      </widget>
     </item>
