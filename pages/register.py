@@ -38,13 +38,19 @@ class SignupPage(QMainWindow):
             self.email.text().strip()
         )  # lay du lieu tu email input, xoa khoang trang 2 dau
         password_input = self.password.text()
-        fullname_input = self.full_name.text()
+        confirm_password_input = self.comfirm_password.text()
+        fullname_input = self.fullname.text()
 
         # kiem tra fullname
         if fullname_input.strip() == "":
             self.show_message("Vui lòng nhập đầy đủ họ tên!")
             return  # bao loi -> ket thuc
 
+        # kiem tra confirm password:
+        if confirm_password_input != password_input:
+            self.show_message("Mật khẩu và Nhập lại mật khẩu không trùng khớp!")
+            return # bao loi -> ket thuc
+        
         # validate du lieu
         if self.__validate_input(email_input, password_input) is not None:
             print(self.__validate_input(email_input, password_input))

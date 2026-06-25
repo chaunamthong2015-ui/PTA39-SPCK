@@ -131,7 +131,7 @@ background-color: #39B1D1 ;</string>
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="email1">
+     <widget class="QLineEdit" name="email">
       <property name="minimumSize">
        <size>
         <width>780</width>

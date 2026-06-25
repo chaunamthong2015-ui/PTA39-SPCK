@@ -32,164 +32,167 @@ color: #ED4D2D ;
 
 </string>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
-     <widget class="QPushButton" name="account">
+     <widget class="QWidget" name="widget_2" native="true">
       <property name="minimumSize">
        <size>
-        <width>161</width>
-        <height>71</height>
+        <width>0</width>
+        <height>60</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>161</width>
-        <height>71</height>
+        <width>16777215</width>
+        <height>60</height>
        </size>
       </property>
-      <property name="font">
-       <font>
-        <family>Arial Black</family>
-       </font>
-      </property>
-      <property name="text">
-       <string>account</string>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../assets/icons/icons8-account-50.png</normaloff>../assets/icons/icons8-account-50.png</iconset>
-      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLineEdit" name="search_input">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="search">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial Black</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>search</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../assets/icons/icons8-google-web-search-60.png</normaloff>../assets/icons/icons8-google-web-search-60.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="account">
+         <property name="minimumSize">
+          <size>
+           <width>161</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>1000</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial Black</family>
+          </font>
+         </property>
+         <property name="text">
+          <string>account</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../assets/icons/icons8-account-50.png</normaloff>../assets/icons/icons8-account-50.png</iconset>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="search">
-      <property name="font">
-       <font>
-        <family>Arial Black</family>
-       </font>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable">
+       <bool>true</bool>
       </property>
-      <property name="text">
-       <string>search</string>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../assets/icons/icons8-google-web-search-60.png</normaloff>../assets/icons/icons8-google-web-search-60.png</iconset>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QWidget" name="widget" native="true">
-      <widget class="QLabel" name="label">
+      <widget class="QWidget" name="items_container">
        <property name="geometry">
         <rect>
-         <x>-10</x>
-         <y>20</y>
-         <width>151</width>
-         <height>111</height>
+         <x>0</x>
+         <y>0</y>
+         <width>780</width>
+         <height>514</height>
         </rect>
        </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="pixmap">
-        <pixmap>../assets/imgs/images (1).jpg</pixmap>
-       </property>
-       <property name="scaledContents">
-        <bool>true</bool>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="details1">
-       <property name="geometry">
-        <rect>
-         <x>140</x>
-         <y>20</y>
-         <width>201</width>
-         <height>111</height>
-        </rect>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>201</width>
-         <height>111</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>201</width>
-         <height>111</height>
-        </size>
-       </property>
-       <property name="text">
-        <string>Click to see details</string>
-       </property>
-       <property name="icon">
-        <iconset>
-         <normaloff>../assets/imgs/images (1).jpg</normaloff>../assets/imgs/images (1).jpg</iconset>
-       </property>
-      </widget>
-     </widget>
-    </item>
-    <item>
-     <widget class="QWidget" name="widget_2" native="true">
-      <widget class="QLabel" name="label_2">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>10</y>
-         <width>151</width>
-         <height>111</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="pixmap">
-        <pixmap>../assets/imgs/images.jpg</pixmap>
-       </property>
-       <property name="scaledContents">
-        <bool>true</bool>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="details2">
-       <property name="geometry">
-        <rect>
-         <x>160</x>
-         <y>10</y>
-         <width>201</width>
-         <height>111</height>
-        </rect>
-       </property>
-       <property name="minimumSize">
-        <size>
-         <width>201</width>
-         <height>111</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>201</width>
-         <height>111</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>Click to see details</string>
-       </property>
-       <property name="icon">
-        <iconset>
-         <normaloff>../assets/imgs/images.jpg</normaloff>../assets/imgs/images.jpg</iconset>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-       <property name="default">
-        <bool>false</bool>
-       </property>
-       <property name="flat">
-        <bool>false</bool>
-       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="1" column="0">
+         <widget class="QWidget" name="widget" native="true">
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>260</height>
+           </size>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>200</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>200</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>../assets/imgs/images (1).jpg</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="details1">
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Click to see details</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../assets/imgs/images (1).jpg</normaloff>../assets/imgs/images (1).jpg</iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
       </widget>
      </widget>
     </item>

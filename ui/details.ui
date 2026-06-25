@@ -31,7 +31,7 @@
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QLabel" name="label">
+     <widget class="QLabel" name="img">
       <property name="minimumSize">
        <size>
         <width>481</width>
@@ -53,7 +53,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="label_2">
+     <widget class="QLabel" name="description">
       <property name="font">
        <font>
         <family>Arial</family>
@@ -66,7 +66,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="label_3">
+     <widget class="QLabel" name="created_by">
       <property name="font">
        <font>
         <family>Arial</family>
@@ -79,7 +79,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="label_4">
+     <widget class="QLabel" name="created_at">
       <property name="font">
        <font>
         <family>Arial</family>
@@ -92,7 +92,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="buy2">
+     <widget class="QPushButton" name="buy_btn">
       <property name="text">
        <string>BUY</string>
       </property>
