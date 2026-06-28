@@ -9,11 +9,12 @@ from PyQt6 import uic
 danhsach_monhang = [
     {
         "id": 1,
-        "name": "Bánh tròn màu sắc",
+        "name": "Banh tròn màu sắc",
         "price": "20.000đ",
         "created_by": "Nam Thông",
         "details": "Đồ chơi bằng nhựa PP nguyên sinh an toàn cho trẻ nhỏ, nhiều màu sắc.",
         "created_at": date(2026, 6, 21),
+        "img": "assets/imgs/image_1.jpg"
     },
     {
         "id": 2,
@@ -22,6 +23,7 @@ danhsach_monhang = [
         "created_by": "Minh Anh",
         "details": "Xe mô hình nhỏ bằng hợp kim, sơn màu bền đẹp.",
         "created_at": date(2026, 6, 20),
+        "img": "assets/imgs/image_2.jpg"
     },
     {
         "id": 3,
@@ -30,6 +32,7 @@ danhsach_monhang = [
         "created_by": "Thu Hà",
         "details": "Búp bê may bằng vải cotton mềm mại, an toàn cho bé.",
         "created_at": date(2026, 6, 19),
+        "img": "assets/imgs/image_3.jpg"
     },
     {
         "id": 4,
@@ -38,6 +41,7 @@ danhsach_monhang = [
         "created_by": "Quốc Bảo",
         "details": "Bộ xếp hình bằng gỗ tự nhiên, giúp phát triển tư duy.",
         "created_at": date(2026, 6, 18),
+        "img": "assets/imgs/image_4.jpg"
     },
     {
         "id": 5,
@@ -46,6 +50,7 @@ danhsach_monhang = [
         "created_by": "Lan Nhi",
         "details": "Bóng cao su nhiều màu, đàn hồi tốt, an toàn.",
         "created_at": date(2026, 6, 17),
+        "img": "assets/imgs/image_5.jpg"
     },
     {
         "id": 6,
@@ -54,6 +59,7 @@ danhsach_monhang = [
         "created_by": "Hùng Cường",
         "details": "Đất nặn an toàn không độc hại, bộ 12 màu.",
         "created_at": date(2026, 6, 16),
+        "img": "assets/imgs/image_6.jpg"
     },
     {
         "id": 7,
@@ -62,6 +68,7 @@ danhsach_monhang = [
         "created_by": "Diệu Linh",
         "details": "Tập tranh tô màu chủ đề động vật, 20 trang.",
         "created_at": date(2026, 6, 15),
+        "img": "assets/imgs/image_7.jpg"
     },
     {
         "id": 8,
@@ -70,6 +77,7 @@ danhsach_monhang = [
         "created_by": "Phúc An",
         "details": "Trống lắc nhỏ bằng gỗ, âm thanh vui nhộn cho bé.",
         "created_at": date(2026, 6, 14),
+        "img": "assets/imgs/image_8.jpg"
     },
     {
         "id": 9,
@@ -78,6 +86,7 @@ danhsach_monhang = [
         "created_by": "Bảo Châu",
         "details": "Kính lúp nhỏ dành cho bé khám phá thiên nhiên.",
         "created_at": date(2026, 6, 13),
+        "img": "assets/imgs/image_9.jpg"
     },
     {
         "id": 10,
@@ -86,6 +95,7 @@ danhsach_monhang = [
         "created_by": "Yến Nhi",
         "details": "Thú nhồi bông hình gấu, lông mềm mịn, size vừa tay bé.",
         "created_at": date(2026, 6, 12),
+        "img": "assets/imgs/image_10.jpg"
     },
 ]
 
@@ -154,8 +164,8 @@ class HomePage(QMainWindow):
 
             # ✅ Random ảnh 1 hoặc 2 vì data chỉ có 2 ảnh
             # random.choice([...]) → chọn ngẫu nhiên 1 phần tử trong danh sách
-            so_anh = random.choice([1, 2])
-            img_path = f"{self.root_dir}/assets/imgs/image_{so_anh}.jpg"
+            #so_anh = random.choice([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+            img_path = f"{self.root_dir}/" + mon_hang["img"]
 
             # ✅ Gán đường dẫn ảnh vào data trước khi truyền vào card
             mon_hang_copy = {**mon_hang, "img": img_path}

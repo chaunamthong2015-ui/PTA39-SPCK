@@ -27,10 +27,8 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
-    <string notr="true">background-color: #39B1D1 ;
-color: #ED4D2D ;
-
-</string>
+    <string notr="true">color: #ED4D2D ;
+background-color: #39B1D1 ;</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
@@ -127,8 +125,8 @@ color: #ED4D2D ;
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>780</width>
-         <height>514</height>
+         <width>776</width>
+         <height>509</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout">
