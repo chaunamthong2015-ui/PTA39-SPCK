@@ -43,8 +43,8 @@
     </size>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: #39B1D1 ;
-color: #ED4D2D</string>
+    <string notr="true">background-color: #e6feff ;
+color: #000000 ;</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
@@ -73,9 +73,7 @@ color: #ED4D2D</string>
        <enum>Qt::LeftToRight</enum>
       </property>
       <property name="styleSheet">
-       <string notr="true">
-
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>Welcome back!</string>
@@ -224,8 +222,7 @@ color: #ED4D2D</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>Login</string>
@@ -256,8 +253,7 @@ color: #ED4D2D</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">
-</string>
+       <string notr="true"/>
       </property>
       <property name="text">
        <string>Sign up here!</string>

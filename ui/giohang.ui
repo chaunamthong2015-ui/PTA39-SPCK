@@ -27,14 +27,16 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
-    <string notr="true"/>
+    <string notr="true">background-color: #e6feff ;
+color: #000000 ;
+</string>
    </property>
-   <layout class="QFormLayout" name="formLayout">
-    <item row="0" column="1">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
      <widget class="QLabel" name="label_3">
       <property name="font">
        <font>
-        <family>Arial</family>
+        <family>Arial Black</family>
         <pointsize>14</pointsize>
        </font>
       </property>
@@ -43,57 +45,34 @@
       </property>
      </widget>
     </item>
-    <item row="2" column="1">
-     <widget class="QLabel" name="label_2">
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>../assets/imgs/images (1).jpg</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="6" column="1">
+    <item>
      <widget class="QLabel" name="label">
       <property name="text">
        <string/>
       </property>
-      <property name="pixmap">
-       <pixmap>../assets/imgs/images.jpg</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
      </widget>
     </item>
-    <item row="11" column="1">
-     <widget class="QPushButton" name="remove_btn2">
-      <property name="text">
-       <string>xóa</string>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="1">
-     <widget class="QPushButton" name="remove_btn1">
-      <property name="text">
-       <string>xóa</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="1">
+    <item>
      <widget class="QPushButton" name="dathang_1">
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+       </font>
+      </property>
       <property name="text">
        <string>Đặt hàng</string>
       </property>
      </widget>
     </item>
-    <item row="7" column="1">
-     <widget class="QPushButton" name="dathang_2">
+    <item>
+     <widget class="QPushButton" name="remove_btn1">
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+       </font>
+      </property>
       <property name="text">
-       <string>Đặt hàng</string>
+       <string>xóa</string>
       </property>
      </widget>
     </item>

@@ -30,8 +30,8 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
-    <string notr="true">color: #ED4D2D ;
-background-color: #39B1D1 ;</string>
+    <string notr="true">background-color: #e6feff ;
+color: #000000 ;</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>

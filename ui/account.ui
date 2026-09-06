@@ -27,8 +27,8 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
-    <string notr="true">background: #39B1D1 ;
-color: #ED4D2D ;</string>
+    <string notr="true">background-color: #e6feff ;
+color: #000000 ;</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
@@ -57,6 +57,23 @@ color: #ED4D2D ;</string>
      </widget>
     </item>
     <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>SHOPPING CART</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../assets/icons/icons8-shopping-cart-60.png</normaloff>../assets/icons/icons8-shopping-cart-60.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
      <widget class="QPushButton" name="home">
       <property name="minimumSize">
        <size>
@@ -80,7 +97,7 @@ color: #ED4D2D ;</string>
        <string notr="true"/>
       </property>
       <property name="text">
-       <string>Go to home</string>
+       <string>HOME</string>
       </property>
       <property name="icon">
        <iconset>
@@ -92,14 +109,14 @@ color: #ED4D2D ;</string>
      <widget class="QPushButton" name="logout">
       <property name="minimumSize">
        <size>
-        <width>81</width>
-        <height>41</height>
+        <width>110</width>
+        <height>50</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>81</width>
-        <height>41</height>
+        <width>110</width>
+        <height>50</height>
        </size>
       </property>
       <property name="font">
@@ -108,7 +125,7 @@ color: #ED4D2D ;</string>
        </font>
       </property>
       <property name="text">
-       <string>Log out</string>
+       <string>LOG OUT</string>
       </property>
       <property name="icon">
        <iconset>
