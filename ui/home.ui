@@ -27,10 +27,30 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
-    <string notr="true">background-color: #e6feff ;
-color: #000000 ;</string>
+    <string notr="true">#centralwidget {
+	background: #E3F2FD
+}
+
+
+
+QPushButton {
+	width: 50px;
+	height: 50px;
+	background: #90CAF9;
+	color: black;
+	font-weight: 700;
+	font-size: 16px;
+	border: none;
+	border-radius: 10px;
+}
+
+QPushButton:hover {
+	background: #2196F3;
+}
+
+</string>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout_2">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
     <item>
      <widget class="QWidget" name="widget_2" native="true">
       <property name="minimumSize">
@@ -72,11 +92,13 @@ color: #000000 ;</string>
          </property>
          <property name="font">
           <font>
-           <family>Arial Black</family>
+           <pointsize>-1</pointsize>
+           <weight>87</weight>
+           <bold>true</bold>
           </font>
          </property>
          <property name="text">
-          <string>search</string>
+          <string/>
          </property>
          <property name="icon">
           <iconset>
@@ -100,7 +122,9 @@ color: #000000 ;</string>
          </property>
          <property name="font">
           <font>
-           <family>Arial Black</family>
+           <pointsize>-1</pointsize>
+           <weight>87</weight>
+           <bold>true</bold>
           </font>
          </property>
          <property name="text">
@@ -129,8 +153,8 @@ color: #000000 ;</string>
          <height>509</height>
         </rect>
        </property>
-       <layout class="QGridLayout" name="gridLayout">
-        <item row="1" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
          <widget class="QWidget" name="widget" native="true">
           <property name="maximumSize">
            <size>
@@ -138,7 +162,7 @@ color: #000000 ;</string>
             <height>260</height>
            </size>
           </property>
-          <layout class="QVBoxLayout" name="verticalLayout">
+          <layout class="QVBoxLayout" name="verticalLayout_2">
            <item>
             <widget class="QLabel" name="label">
              <property name="minimumSize">

@@ -43,8 +43,25 @@
     </size>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: #e6feff ;
-color: #000000 ;</string>
+    <string notr="true">#centralwidget {
+	background: #E3F2FD
+}
+
+QPushButton {
+	width: 50px;
+	height: 50px;
+	background: #90CAF9;
+	color: black;
+	font-weight: 700;
+	font-size: 16px;
+	border: none;
+	border-radius: 10px;
+}
+
+QPushButton:hover {
+	background: #2196F3;
+}
+</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
@@ -141,6 +158,9 @@ color: #000000 ;</string>
       <property name="readOnly">
        <bool>false</bool>
       </property>
+      <property name="placeholderText">
+       <string>abc@gmail.com</string>
+      </property>
      </widget>
     </item>
     <item>
@@ -200,6 +220,9 @@ color: #000000 ;</string>
       <property name="readOnly">
        <bool>false</bool>
       </property>
+      <property name="placeholderText">
+       <string>******</string>
+      </property>
      </widget>
     </item>
     <item>
@@ -218,7 +241,9 @@ color: #000000 ;</string>
       </property>
       <property name="font">
        <font>
-        <family>Arial Black</family>
+        <pointsize>-1</pointsize>
+        <weight>87</weight>
+        <bold>true</bold>
        </font>
       </property>
       <property name="styleSheet">
@@ -249,7 +274,9 @@ color: #000000 ;</string>
       </property>
       <property name="font">
        <font>
-        <family>Arial Black</family>
+        <pointsize>-1</pointsize>
+        <weight>87</weight>
+        <bold>true</bold>
        </font>
       </property>
       <property name="styleSheet">

@@ -39,18 +39,12 @@
     </size>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: #e6feff ;
-color: #000000 ;
-
+    <string notr="true">#centralwidget {
+	background: #E3F2FD
+}
 </string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
-    <property name="spacing">
-     <number>10</number>
-    </property>
-    <property name="sizeConstraint">
-     <enum>QLayout::SetNoConstraint</enum>
-    </property>
     <item>
      <widget class="QLabel" name="result_title">
       <property name="minimumSize">
