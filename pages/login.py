@@ -5,7 +5,6 @@ import os
 import re
 
 # mock data
-account = {"fullname": "Nguyen Van A", "email": "abc@gmail.com", "password": "1234567"}
 
 
 class LoginPage(QMainWindow):

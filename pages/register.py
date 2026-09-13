@@ -59,10 +59,10 @@ class SignupPage(QMainWindow):
         else:
             # luu tai khoan
             # 1. tao user
-            new_user = User(username=fullname_input, email=email_input, password=password_input)
+            self.new_user = User(username=fullname_input, email=email_input, password=password_input)
             # 2. luu vao danh sach
             user_list = UserList()
-            user_list.add_user(new_user)
+            user_list.add_user(self.new_user)
             # 3. luu json
             user_list.save_to_json("data/user.json")
             # thanh cong -> chuyen sang home
@@ -81,7 +81,7 @@ class SignupPage(QMainWindow):
         from pages.home import HomePage
 
         self.home_page = HomePage(
-            main_window=self.main_window, root_dir=self.root_dir, cur_acc=account
+            main_window=self.main_window, root_dir=self.root_dir, cur_acc=self.new_user
         )
         self.close()  # ✅ đóng cửa sổ
 
