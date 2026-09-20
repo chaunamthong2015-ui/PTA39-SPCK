@@ -14,7 +14,7 @@ class SignupPage(QMainWindow):
         self.root_dir = root_dir
 
         # load file ui
-        ui_path = self.root_dir + "/ui/signup.ui"
+        ui_path = self.root_dir + "ui/signup.ui"
         uic.loadUi(ui_path, self)
 
         # bat su kien cho cac nut bam
