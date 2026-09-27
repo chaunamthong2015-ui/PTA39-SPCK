@@ -3,15 +3,15 @@ import sys
 from PyQt6 import uic
 import os
 import re
-
-# mock data
-
+from entities.users import UserList, User
 
 class LoginPage(QMainWindow):
     def __init__(self, main_window, root_dir):
         super().__init__()  # ke thua cac code init cua lop cha
         self.main_window = main_window  # luu tham so
         self.root_dir = root_dir
+        self.userlist = UserList()
+        self.loginuser = None
 
         # load file ui
         ui_path = self.root_dir + "/ui/login.ui"
@@ -45,7 +45,13 @@ class LoginPage(QMainWindow):
             self.show_message(self.__validate_input(email_input, password_input))
             return  # khong lam gi nua
         else:
-            # thanh cong -> chuyen sang home
+            # kiem tra tai khoan trong danh sach nguoi dung
+            self.loginuser = self.userlist.get_user(email_input)
+            print(self.loginuser)
+            # kiem tra khop tai khoan (mock data)
+            if self.loginuser is None or email_input != self.loginuser.get_email() or password_input != self.loginuser.get_password():
+                self.show_message("Email hoặc mật khẩu không đúng!")
+                return  # bao loi -> ket thuc
             self.__goto_home()
 
     def goto_register(self):
@@ -58,8 +64,7 @@ class LoginPage(QMainWindow):
     # ------------------ ham ho tro ------------------
     def __goto_home(self):
         from pages.home import HomePage
-
-        self.home_page = HomePage(main_window=self.main_window, root_dir=self.root_dir, cur_acc=account)
+        self.home_page = HomePage(main_window=self.main_window, root_dir=self.root_dir, cur_acc=self.loginuser)
         self.close()  # ✅ đóng cửa sổ
 
     def __validate_input(self, email, password):
@@ -72,9 +77,7 @@ class LoginPage(QMainWindow):
         if len(password) < 6:
             return "Password phai tu 6 chu so tro len!"
 
-        # kiem tra khop tai khoan (mock data)
-        if email != account["email"] or password != account["password"]:
-            return "Email hoac password khong chinh xac!"
+        
 
         return None  # khong co loi
     

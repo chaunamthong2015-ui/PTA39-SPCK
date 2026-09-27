@@ -50,8 +50,8 @@ QPushButton:hover {
 
 </string>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout_3">
-    <item>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
      <widget class="QWidget" name="widget_2" native="true">
       <property name="minimumSize">
        <size>
@@ -139,7 +139,7 @@ QPushButton:hover {
       </layout>
      </widget>
     </item>
-    <item>
+    <item row="1" column="0">
      <widget class="QScrollArea" name="scrollArea">
       <property name="widgetResizable">
        <bool>true</bool>

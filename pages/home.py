@@ -145,46 +145,27 @@ class HomePage(QMainWindow):
     def set_danhsach_monhang(self):
         from pages.item_card import ItemCard
 
-        # ✅ Giải thích: Grid layout sắp xếp theo hàng và cột (row, column)
-        # Ví dụ: 3 cột → item 0 ở (row=0, col=0), item 1 ở (row=0, col=1), ...
-        SO_COT = 3  # mỗi hàng hiển thị 3 card
+        SO_COT = 3
 
-        # ✅ Xóa widget placeholder (widget thừa được thêm sẵn trong Qt Designer)
-        # Nếu không xóa, grid sẽ bị lệch hoặc thừa ô trống
-        for i in reversed(range(self.gridLayout.count())):
-            widget = self.gridLayout.itemAt(i).widget()
+        # ✅ Lấy layout ra biến riêng (thay vì gọi trực tiếp trên widget)
+        layout = self.items_container.layout()
+
+        # ✅ Xóa widget placeholder cũ
+        for i in reversed(range(layout.count())):
+            widget = layout.itemAt(i).widget()
             if widget:
-                widget.setParent(
-                    None
-                )  # tách widget ra khỏi layout (xóa khỏi giao diện)
+                widget.setParent(None)
 
-        # ✅ Vòng for duyệt danh sách, dùng enumerate để lấy chỉ số (index)
-        # enumerate([a, b, c]) → (0, a), (1, b), (2, c)
         for index, mon_hang in enumerate(danhsach_monhang):
-
-            # ✅ Random ảnh 1 hoặc 2 vì data chỉ có 2 ảnh
-            # random.choice([...]) → chọn ngẫu nhiên 1 phần tử trong danh sách
-            #so_anh = random.choice([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
-            img_path = f"{self.root_dir}/" + mon_hang["img"]
-
-            # ✅ Gán đường dẫn ảnh vào data trước khi truyền vào card
+            img_path = f"{ self.root_dir}/" + mon_hang["img"]
             mon_hang_copy = {**mon_hang, "img": img_path}
-            # {**mon_hang, "img": img_path} nghĩa là:
-            # copy toàn bộ dict mon_hang, rồi thêm/ghi đè key "img"
-
-            # Tạo card widget
             card = ItemCard(root_dir=self.root_dir, product_data=mon_hang_copy)
 
-            # ✅ Tính vị trí hàng và cột trong grid
-            row = index // SO_COT  # // là chia lấy phần nguyên: 0//3=0, 3//3=1, 6//3=2
-            col = index % SO_COT  # %  là chia lấy phần dư:     0%3=0,  1%3=1,  2%3=2
+            row = index // SO_COT
+            col = index % SO_COT
 
-            # Thêm card vào đúng ô trong grid
-            self.gridLayout.addWidget(card, row, col)
-
-        # ✅ Giữ cho các card không bị giãn ra khi còn ít item
-        # addStretch() thêm khoảng trống co giãn vào cuối, đẩy các card lên trên
-        # (chỉ dùng được với QVBoxLayout/QHBoxLayout, với QGridLayout thì bỏ qua)
+            # ✅ Gọi addWidget trên layout, không phải trên container
+            layout.addWidget(card, row, col)
 
     # ------------------ hàm hỗ trợ ------------------
     def show_message(self, message):

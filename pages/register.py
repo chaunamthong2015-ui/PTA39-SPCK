@@ -14,7 +14,7 @@ class SignupPage(QMainWindow):
         self.root_dir = root_dir
 
         # load file ui
-        ui_path = self.root_dir + "ui/signup.ui"
+        ui_path = self.root_dir + "/ui/signup.ui"
         uic.loadUi(ui_path, self)
 
         # bat su kien cho cac nut bam
@@ -64,7 +64,7 @@ class SignupPage(QMainWindow):
             user_list = UserList()
             user_list.add_user(self.new_user)
             # 3. luu json
-            user_list.save_to_json("data/user.json")
+            user_list.save_to_json("data/users.json")
             # thanh cong -> chuyen sang home
             self.__goto_home()
 

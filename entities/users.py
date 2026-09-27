@@ -5,6 +5,7 @@ from entities.user import User
 class UserList:
     def __init__(self):
         self.__users = []
+        self.load_from_json("data/users.json")  # load du lieu tu file json
         
     def add_user(self, user: User):
         if isinstance(user, User):
@@ -23,11 +24,11 @@ class UserList:
                 return
         print(f"User with username '{username}' not found.")
         
-    def get_user(self, username: str):
+    def get_user(self, email: str):
         for user in self.__users:
-            if user.get_username() == username:
+            if user.get_email() == email:
                 return user
-        print(f"User with username '{username}' not found.")
+        print(f"User with email '{email}' not found.")
         return None
     
     def update_user(self, user:User):
