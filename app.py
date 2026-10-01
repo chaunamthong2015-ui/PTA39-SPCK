@@ -4,7 +4,7 @@ from PyQt6 import uic
 import os
 
 # from pages.login import LoginPage # trang dau tien truy cap
-from pages.home import HomePage 
+from pages.login import LoginPage 
 from entities.user import User
 
 
@@ -16,6 +16,5 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # chi chay khi run bang app.py
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    curuser = User(username="admin", email="admin@gmail.com", password="123456")
-    first_page = HomePage(main_window=None, root_dir=BASE_DIR, cur_acc=curuser)
+    first_page = LoginPage(main_window=None, root_dir=BASE_DIR)
     sys.exit(app.exec())

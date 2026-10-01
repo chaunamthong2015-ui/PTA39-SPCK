@@ -74,35 +74,17 @@ QPushButton:hover {
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton">
-      <property name="font">
-       <font>
-        <pointsize>-1</pointsize>
-        <weight>87</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="text">
-       <string>SHOPPING CART</string>
-      </property>
-      <property name="icon">
-       <iconset>
-        <normaloff>../assets/icons/icons8-shopping-cart-60.png</normaloff>../assets/icons/icons8-shopping-cart-60.png</iconset>
-      </property>
-     </widget>
-    </item>
-    <item>
      <widget class="QPushButton" name="home">
       <property name="minimumSize">
        <size>
-        <width>161</width>
-        <height>61</height>
+        <width>780</width>
+        <height>60</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>161</width>
-        <height>16777215</height>
+        <width>780</width>
+        <height>60</height>
        </size>
       </property>
       <property name="font">
@@ -125,17 +107,47 @@ QPushButton:hover {
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="logout">
+     <widget class="QPushButton" name="pushButton">
       <property name="minimumSize">
        <size>
-        <width>110</width>
-        <height>50</height>
+        <width>780</width>
+        <height>60</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>110</width>
-        <height>50</height>
+        <width>780</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+        <weight>87</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>SHOPPING CART</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../assets/icons/icons8-shopping-cart-60.png</normaloff>../assets/icons/icons8-shopping-cart-60.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="logout">
+      <property name="minimumSize">
+       <size>
+        <width>780</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>780</width>
+        <height>60</height>
        </size>
       </property>
       <property name="font">
