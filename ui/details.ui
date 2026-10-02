@@ -92,7 +92,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="text">
-       <string>Bởi Thong</string>
+       <string>Bởi Thông</string>
       </property>
      </widget>
     </item>
@@ -113,6 +113,7 @@ QPushButton:hover {
      <widget class="QPushButton" name="buy_btn">
       <property name="font">
        <font>
+        <family>Arial Black</family>
         <pointsize>-1</pointsize>
         <weight>87</weight>
         <bold>true</bold>

@@ -271,6 +271,7 @@ QPushButton:hover {
       </property>
       <property name="font">
        <font>
+        <family>Arial Black</family>
         <pointsize>-1</pointsize>
         <weight>87</weight>
         <bold>true</bold>
@@ -304,6 +305,7 @@ QPushButton:hover {
       </property>
       <property name="font">
        <font>
+        <family>Arial Black</family>
         <pointsize>-1</pointsize>
         <weight>87</weight>
         <bold>true</bold>

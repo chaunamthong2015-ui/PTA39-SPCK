@@ -97,6 +97,132 @@ danhsach_monhang = [
         "created_at": date(2026, 6, 12),
         "img": "assets/imgs/image_10.jpg"
     },
+    {
+    "id": 11,
+    "name": "Bộ cờ vua mini",
+    "price": "60.000đ",
+    "created_by": "Hoàng Nam",
+    "details": "Bộ cờ vua kích thước nhỏ, giúp rèn luyện tư duy logic.",
+    "created_at": date(2026, 6, 11),
+    "img": "assets/imgs/image_11.jpg"
+    },
+    {
+    "id": 12,
+    "name": "Rubik 3x3",
+    "price": "25.000đ",
+    "created_by": "Gia Huy",
+    "details": "Khối Rubik 3x3 xoay trơn, phù hợp cho trẻ em và người mới chơi.",
+    "created_at": date(2026, 6, 10),
+    "img": "assets/imgs/image_12.jpg"
+    },
+    {
+    "id": 13,
+    "name": "Bộ bác sĩ nhí",
+    "price": "75.000đ",
+    "created_by": "Khánh Linh",
+    "details": "Bộ đồ chơi bác sĩ gồm ống nghe, nhiệt kế và nhiều dụng cụ mô phỏng.",
+    "created_at": date(2026, 6, 9),
+    "img": "assets/imgs/image_13.jpg"
+    },
+    {
+    "id": 14,
+    "name": "Bộ nấu ăn mini",
+    "price": "100.000đ",
+    "created_by": "Mai Anh",
+    "details": "Bộ đồ chơi nhà bếp nhiều dụng cụ nhỏ, màu sắc tươi sáng.",
+    "created_at": date(2026, 6, 8),
+    "img": "assets/imgs/image_14.jpg"
+    },
+    {
+    "id": 15,
+    "name": "Máy bay đồ chơi",
+    "price": "45.000đ",
+    "created_by": "Đức Anh",
+    "details": "Máy bay mô hình nhỏ gọn, thiết kế đẹp và chắc chắn.",
+    "created_at": date(2026, 6, 7),
+    "img": "assets/imgs/image_15.jpg"
+    },
+    {
+    "id": 16,
+    "name": "Tàu hỏa mini",
+    "price": "50.000đ",
+    "created_by": "Tuấn Kiệt",
+    "details": "Tàu hỏa đồ chơi nhiều toa, phù hợp cho trẻ yêu thích phương tiện giao thông.",
+    "created_at": date(2026, 6, 6),
+    "img": "assets/imgs/image_16.jpg"
+    },
+    {
+    "id": 17,
+    "name": "Bộ domino màu",
+    "price": "35.000đ",
+    "created_by": "Ngọc Hân",
+    "details": "Bộ domino nhiều màu giúp trẻ rèn khả năng quan sát và tư duy.",
+    "created_at": date(2026, 6, 5),
+    "img": "assets/imgs/image_17.jpg"
+    },
+    {
+    "id": 18,
+    "name": "Bộ lắp ráp robot",
+    "price": "200.000đ",
+    "created_by": "Thanh Tùng",
+    "details": "Bộ lắp ráp robot nhiều chi tiết, giúp phát triển khả năng sáng tạo.",
+    "created_at": date(2026, 6, 4),
+    "img": "assets/imgs/image_18.jpg"
+    },
+    {
+    "id": 19,
+    "name": "Súng phun nước",
+    "price": "30.000đ",
+    "created_by": "Nhật Minh",
+    "details": "Đồ chơi phun nước nhỏ gọn, thích hợp cho các hoạt động ngoài trời.",
+    "created_at": date(2026, 6, 3),
+    "img": "assets/imgs/image_19.jpg"
+    },
+    {
+    "id": 20,
+    "name": "Diều giấy mini",
+    "price": "20.000đ",
+    "created_by": "Hải Đăng",
+    "details": "Diều giấy nhiều màu sắc, nhẹ và dễ điều khiển.",
+    "created_at": date(2026, 6, 2),
+    "img": "assets/imgs/image_20.jpg"
+    },
+    {
+    "id": 21,
+    "name": "Bộ câu cá nam châm",
+    "price": "55.000đ",
+    "created_by": "Thảo Vy",
+    "details": "Trò chơi câu cá bằng nam châm giúp trẻ luyện sự khéo léo.",
+    "created_at": date(2026, 6, 1),
+    "img": "assets/imgs/image_21.jpg"
+    },
+    {
+    "id": 22,
+    "name": "Bộ xếp hình chữ cái",
+    "price": "40.000đ",
+    "created_by": "Phương Anh",
+    "details": "Bộ chữ cái nhiều màu giúp trẻ làm quen với chữ và từ đơn giản.",
+    "created_at": date(2026, 5, 31),
+    "img": "assets/imgs/image_22.jpg"
+    },
+    {
+    "id": 23,
+    "name": "Máy xúc đồ chơi",
+    "price": "70.000đ",
+    "created_by": "Duy Khánh",
+    "details": "Mô hình máy xúc công trình với cần xúc có thể chuyển động.",
+    "created_at": date(2026, 5, 26),
+    "img": "assets/imgs/image_23.jpg"
+},
+    {
+    "id": 24,
+    "name": "Bảng vẽ nam châm",
+    "price": "65.000đ",
+    "created_by": "Tú Anh",
+    "details": "Bảng vẽ nam châm có bút và khuôn hình, dễ dàng xóa để sử dụng lại.",
+    "created_at": date(2026, 5, 29),
+    "img": "assets/imgs/image_24.jpg"
+    }
 ]
 
 
