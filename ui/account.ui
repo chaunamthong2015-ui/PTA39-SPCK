@@ -49,17 +49,17 @@ QPushButton:hover {
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QLabel" name="title">
+     <widget class="QLabel" name="label_2">
       <property name="minimumSize">
        <size>
-        <width>381</width>
-        <height>101</height>
+        <width>1000</width>
+        <height>100</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>381</width>
-        <height>101</height>
+        <width>1000</width>
+        <height>100</height>
        </size>
       </property>
       <property name="font">
@@ -69,7 +69,7 @@ QPushButton:hover {
        </font>
       </property>
       <property name="text">
-       <string>Welcome to your account</string>
+       <string>Hello here is your account!</string>
       </property>
      </widget>
     </item>
@@ -166,6 +166,30 @@ QPushButton:hover {
       <property name="icon">
        <iconset>
         <normaloff>../assets/icons/icons8-log-out-60.png</normaloff>../assets/icons/icons8-log-out-60.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="title">
+      <property name="minimumSize">
+       <size>
+        <width>1000</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>1000</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
       </property>
      </widget>
     </item>

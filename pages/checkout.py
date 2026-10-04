@@ -4,8 +4,7 @@ from PyQt6 import uic
 import os
 import re
 
-
-class AccountPage(QMainWindow):
+class CheckoutPage(QMainWindow):
     def __init__(self, main_window, root_dir, cur_acc):
         super().__init__()
         self.main_window = main_window
@@ -13,14 +12,13 @@ class AccountPage(QMainWindow):
         self.cur_acc = cur_acc
 
         # load file ui
-        ui_path = self.root_dir + "/ui/account.ui"
+        ui_path = self.root_dir + "/ui/checkout.ui"
         uic.loadUi(ui_path, self)
 
-        self.title.setText(f"Account: {self.cur_acc}")
 
         # bat su kien cho cac nut bam
         self.home.clicked.connect(self.goto_home)
-        self.logout.clicked.connect(self.goto_login)
+        self.gio_hang.clicked.connect(self.goto_gio_hang)
 
         # hien thi giao dien
         self.show()
@@ -34,14 +32,18 @@ class AccountPage(QMainWindow):
         )
         self.close()  # ✅ đóng cửa sổ
 
-    def goto_login(self):
-        from pages.login import LoginPage
+    def goto_gio_hang(self):
+        from pages.gio_hang import GioHangPage
 
-        self.login_page = LoginPage(
-            main_window=self.main_window, root_dir=self.root_dir
+        self.gio_hang_page = GioHangPage(
+            main_window=self.main_window, root_dir=self.root_dir, cur_acc=self.cur_acc
         )
         self.close()  # ✅ đóng cửa sổ
-
+    #-------------------ham cho chuc nang chinh-----------------
+    def save_to_history(self):
+        pass
+    def validate_form(self):
+        pass
     # ------------------ ham ho tro ------------------
     def show_message(self, message):
         # Khởi tạo hộp thoại thông báo
