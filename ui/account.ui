@@ -22,6 +22,12 @@
     <height>600</height>
    </size>
   </property>
+  <property name="font">
+   <font>
+    <weight>50</weight>
+    <bold>false</bold>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
@@ -49,27 +55,17 @@ QPushButton:hover {
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QLabel" name="label_2">
-      <property name="minimumSize">
-       <size>
-        <width>1000</width>
-        <height>100</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>1000</width>
-        <height>100</height>
-       </size>
-      </property>
+     <widget class="QLabel" name="label">
       <property name="font">
        <font>
         <family>Arial Black</family>
         <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
        </font>
       </property>
       <property name="text">
-       <string>Hello here is your account!</string>
+       <string>Here is your account!</string>
       </property>
      </widget>
     </item>
@@ -89,7 +85,6 @@ QPushButton:hover {
       </property>
       <property name="font">
        <font>
-        <family>Arial Black</family>
         <pointsize>-1</pointsize>
         <weight>87</weight>
         <bold>true</bold>
@@ -154,7 +149,6 @@ QPushButton:hover {
       </property>
       <property name="font">
        <font>
-        <family>Arial Black</family>
         <pointsize>-1</pointsize>
         <weight>87</weight>
         <bold>true</bold>

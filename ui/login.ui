@@ -66,16 +66,10 @@ QPushButton:hover {
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <widget class="QLabel" name="title">
-      <property name="minimumSize">
-       <size>
-        <width>250</width>
-        <height>50</height>
-       </size>
-      </property>
       <property name="maximumSize">
        <size>
-        <width>250</width>
-        <height>40</height>
+        <width>16777215</width>
+        <height>250</height>
        </size>
       </property>
       <property name="font">
@@ -86,17 +80,8 @@ QPushButton:hover {
         <bold>true</bold>
        </font>
       </property>
-      <property name="layoutDirection">
-       <enum>Qt::LeftToRight</enum>
-      </property>
-      <property name="styleSheet">
-       <string notr="true"/>
-      </property>
       <property name="text">
        <string>Welcome back!</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
       </property>
      </widget>
     </item>
