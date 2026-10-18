@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>740</width>
+    <height>110</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Form {
+	background: white;
+	border-radius: 10px;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="bo_cuc_doc">
+   <item>
+    <widget class="QLabel" name="ma_don_hang">
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Đơn hàng #1</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="ngay_dat">
+     <property name="text">
+      <string>Ngày đặt: 01/01/2026</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="danh_sach_mon">
+     <property name="text">
+      <string>Món hàng: ...</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="tong_tien">
+     <property name="font">
+      <font>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: red;</string>
+     </property>
+     <property name="text">
+      <string>Tổng tiền: 0đ</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

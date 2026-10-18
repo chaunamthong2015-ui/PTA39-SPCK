@@ -1,0 +1,28 @@
+[
+    {
+        "ma": 1,
+        "email_tai_khoan": "abc@gmail.com",
+        "ho_ten": "thong",
+        "email": "abc@gmail.com",
+        "dia_chi": "Ho Chi Minh",
+        "thanh_pho": "Ho Chi Minh",
+        "ma_buu_dien": "1234567",
+        "danh_sach_mon": [
+            {
+                "ma_san_pham": 18,
+                "ten": "Bộ lắp ráp robot",
+                "gia": 200000,
+                "so_luong": 1
+            },
+            {
+                "ma_san_pham": 23,
+                "ten": "Máy xúc đồ chơi",
+                "gia": 70000,
+                "so_luong": 1
+            }
+        ],
+        "phi_van_chuyen": 30000,
+        "tong_tien": 300000,
+        "ngay_dat": "18/10/2026"
+    }
+]

@@ -1,7 +1,14 @@
 [
     {
-        "username": "thong",
+        "ho_ten": "thong",
         "email": "thong@gmail.com",
-        "password": "1234567"
+        "mat_khau": "1234567",
+        "gio_hang": []
+    },
+    {
+        "ho_ten": "thong",
+        "email": "abc@gmail.com",
+        "mat_khau": "123456",
+        "gio_hang": []
     }
 ]

@@ -1,0 +1,218 @@
+[
+    {
+        "ma": 1,
+        "ten": "Banh tròn màu sắc",
+        "gia": 20000,
+        "nguoi_dang": "Nam Thông",
+        "mo_ta": "Đồ chơi bằng nhựa PP nguyên sinh an toàn cho trẻ nhỏ, nhiều màu sắc.",
+        "ngay_dang": "21/06/2026",
+        "hinh_anh": "assets/imgs/image_1.jpg"
+    },
+    {
+        "ma": 2,
+        "ten": "Xe đồ chơi mini",
+        "gia": 35000,
+        "nguoi_dang": "Minh Anh",
+        "mo_ta": "Xe mô hình nhỏ bằng hợp kim, sơn màu bền đẹp.",
+        "ngay_dang": "20/06/2026",
+        "hinh_anh": "assets/imgs/image_2.jpg"
+    },
+    {
+        "ma": 3,
+        "ten": "Búp bê vải",
+        "gia": 50000,
+        "nguoi_dang": "Thu Hà",
+        "mo_ta": "Búp bê may bằng vải cotton mềm mại, an toàn cho bé.",
+        "ngay_dang": "19/06/2026",
+        "hinh_anh": "assets/imgs/image_3.jpg"
+    },
+    {
+        "ma": 4,
+        "ten": "Xếp hình gỗ",
+        "gia": 45000,
+        "nguoi_dang": "Quốc Bảo",
+        "mo_ta": "Bộ xếp hình bằng gỗ tự nhiên, giúp phát triển tư duy.",
+        "ngay_dang": "18/06/2026",
+        "hinh_anh": "assets/imgs/image_4.jpg"
+    },
+    {
+        "ma": 5,
+        "ten": "Bóng cao su",
+        "gia": 15000,
+        "nguoi_dang": "Lan Nhi",
+        "mo_ta": "Bóng cao su nhiều màu, đàn hồi tốt, an toàn.",
+        "ngay_dang": "17/06/2026",
+        "hinh_anh": "assets/imgs/image_5.jpg"
+    },
+    {
+        "ma": 6,
+        "ten": "Đất nặn màu",
+        "gia": 25000,
+        "nguoi_dang": "Hùng Cường",
+        "mo_ta": "Đất nặn an toàn không độc hại, bộ 12 màu.",
+        "ngay_dang": "16/06/2026",
+        "hinh_anh": "assets/imgs/image_6.jpg"
+    },
+    {
+        "ma": 7,
+        "ten": "Tranh tô màu",
+        "gia": 18000,
+        "nguoi_dang": "Diệu Linh",
+        "mo_ta": "Tập tranh tô màu chủ đề động vật, 20 trang.",
+        "ngay_dang": "15/06/2026",
+        "hinh_anh": "assets/imgs/image_7.jpg"
+    },
+    {
+        "ma": 8,
+        "ten": "Trống lắc tay",
+        "gia": 30000,
+        "nguoi_dang": "Phúc An",
+        "mo_ta": "Trống lắc nhỏ bằng gỗ, âm thanh vui nhộn cho bé.",
+        "ngay_dang": "14/06/2026",
+        "hinh_anh": "assets/imgs/image_8.jpg"
+    },
+    {
+        "ma": 9,
+        "ten": "Kính lúp đồ chơi",
+        "gia": 40000,
+        "nguoi_dang": "Bảo Châu",
+        "mo_ta": "Kính lúp nhỏ dành cho bé khám phá thiên nhiên.",
+        "ngay_dang": "13/06/2026",
+        "hinh_anh": "assets/imgs/image_9.jpg"
+    },
+    {
+        "ma": 10,
+        "ten": "Thú nhồi bông",
+        "gia": 55000,
+        "nguoi_dang": "Yến Nhi",
+        "mo_ta": "Thú nhồi bông hình gấu, lông mềm mịn, size vừa tay bé.",
+        "ngay_dang": "12/06/2026",
+        "hinh_anh": "assets/imgs/image_10.jpg"
+    },
+    {
+        "ma": 11,
+        "ten": "Bộ cờ vua mini",
+        "gia": 60000,
+        "nguoi_dang": "Hoàng Nam",
+        "mo_ta": "Bộ cờ vua kích thước nhỏ, giúp rèn luyện tư duy logic.",
+        "ngay_dang": "11/06/2026",
+        "hinh_anh": "assets/imgs/image_11.jpg"
+    },
+    {
+        "ma": 12,
+        "ten": "Rubik 3x3",
+        "gia": 25000,
+        "nguoi_dang": "Gia Huy",
+        "mo_ta": "Khối Rubik 3x3 xoay trơn, phù hợp cho trẻ em và người mới chơi.",
+        "ngay_dang": "10/06/2026",
+        "hinh_anh": "assets/imgs/image_12.jpg"
+    },
+    {
+        "ma": 13,
+        "ten": "Bộ bác sĩ nhí",
+        "gia": 75000,
+        "nguoi_dang": "Khánh Linh",
+        "mo_ta": "Bộ đồ chơi bác sĩ gồm ống nghe, nhiệt kế và nhiều dụng cụ mô phỏng.",
+        "ngay_dang": "09/06/2026",
+        "hinh_anh": "assets/imgs/image_13.jpg"
+    },
+    {
+        "ma": 14,
+        "ten": "Bộ nấu ăn mini",
+        "gia": 100000,
+        "nguoi_dang": "Mai Anh",
+        "mo_ta": "Bộ đồ chơi nhà bếp nhiều dụng cụ nhỏ, màu sắc tươi sáng.",
+        "ngay_dang": "08/06/2026",
+        "hinh_anh": "assets/imgs/image_14.jpg"
+    },
+    {
+        "ma": 15,
+        "ten": "Máy bay đồ chơi",
+        "gia": 45000,
+        "nguoi_dang": "Đức Anh",
+        "mo_ta": "Máy bay mô hình nhỏ gọn, thiết kế đẹp và chắc chắn.",
+        "ngay_dang": "07/06/2026",
+        "hinh_anh": "assets/imgs/image_15.jpg"
+    },
+    {
+        "ma": 16,
+        "ten": "Tàu hỏa mini",
+        "gia": 50000,
+        "nguoi_dang": "Tuấn Kiệt",
+        "mo_ta": "Tàu hỏa đồ chơi nhiều toa, phù hợp cho trẻ yêu thích phương tiện giao thông.",
+        "ngay_dang": "06/06/2026",
+        "hinh_anh": "assets/imgs/image_16.jpg"
+    },
+    {
+        "ma": 17,
+        "ten": "Bộ domino màu",
+        "gia": 35000,
+        "nguoi_dang": "Ngọc Hân",
+        "mo_ta": "Bộ domino nhiều màu giúp trẻ rèn khả năng quan sát và tư duy.",
+        "ngay_dang": "05/06/2026",
+        "hinh_anh": "assets/imgs/image_17.jpg"
+    },
+    {
+        "ma": 18,
+        "ten": "Bộ lắp ráp robot",
+        "gia": 200000,
+        "nguoi_dang": "Thanh Tùng",
+        "mo_ta": "Bộ lắp ráp robot nhiều chi tiết, giúp phát triển khả năng sáng tạo.",
+        "ngay_dang": "04/06/2026",
+        "hinh_anh": "assets/imgs/image_18.jpg"
+    },
+    {
+        "ma": 19,
+        "ten": "Súng phun nước",
+        "gia": 30000,
+        "nguoi_dang": "Nhật Minh",
+        "mo_ta": "Đồ chơi phun nước nhỏ gọn, thích hợp cho các hoạt động ngoài trời.",
+        "ngay_dang": "03/06/2026",
+        "hinh_anh": "assets/imgs/image_19.jpg"
+    },
+    {
+        "ma": 20,
+        "ten": "Diều giấy mini",
+        "gia": 20000,
+        "nguoi_dang": "Hải Đăng",
+        "mo_ta": "Diều giấy nhiều màu sắc, nhẹ và dễ điều khiển.",
+        "ngay_dang": "02/06/2026",
+        "hinh_anh": "assets/imgs/image_20.jpg"
+    },
+    {
+        "ma": 21,
+        "ten": "Bộ câu cá nam châm",
+        "gia": 55000,
+        "nguoi_dang": "Thảo Vy",
+        "mo_ta": "Trò chơi câu cá bằng nam châm giúp trẻ luyện sự khéo léo.",
+        "ngay_dang": "01/06/2026",
+        "hinh_anh": "assets/imgs/image_21.jpg"
+    },
+    {
+        "ma": 22,
+        "ten": "Bộ xếp hình chữ cái",
+        "gia": 40000,
+        "nguoi_dang": "Phương Anh",
+        "mo_ta": "Bộ chữ cái nhiều màu giúp trẻ làm quen với chữ và từ đơn giản.",
+        "ngay_dang": "31/05/2026",
+        "hinh_anh": "assets/imgs/image_22.jpg"
+    },
+    {
+        "ma": 23,
+        "ten": "Máy xúc đồ chơi",
+        "gia": 70000,
+        "nguoi_dang": "Duy Khánh",
+        "mo_ta": "Mô hình máy xúc công trình với cần xúc có thể chuyển động.",
+        "ngay_dang": "26/05/2026",
+        "hinh_anh": "assets/imgs/image_23.jpg"
+    },
+    {
+        "ma": 24,
+        "ten": "Bảng vẽ nam châm",
+        "gia": 65000,
+        "nguoi_dang": "Tú Anh",
+        "mo_ta": "Bảng vẽ nam châm có bút và khuôn hình, dễ dàng xóa để sử dụng lại.",
+        "ngay_dang": "29/05/2026",
+        "hinh_anh": "assets/imgs/image_24.jpg"
+    }
+]

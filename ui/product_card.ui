@@ -25,9 +25,9 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
+  <layout class="QVBoxLayout" name="bo_cuc_doc">
    <item>
-    <widget class="QLabel" name="label">
+    <widget class="QLabel" name="hinh_anh">
      <property name="minimumSize">
       <size>
        <width>200</width>
@@ -43,16 +43,13 @@
      <property name="text">
       <string/>
      </property>
-     <property name="pixmap">
-      <pixmap>../assets/imgs/images (1).jpg</pixmap>
-     </property>
      <property name="scaledContents">
       <bool>true</bool>
      </property>
     </widget>
    </item>
    <item>
-    <widget class="QLabel" name="label_2">
+    <widget class="QLabel" name="ten_san_pham">
      <property name="font">
       <font>
        <weight>75</weight>
@@ -65,7 +62,7 @@
     </widget>
    </item>
    <item>
-    <widget class="QLabel" name="label_3">
+    <widget class="QLabel" name="gia">
      <property name="font">
       <font>
        <pointsize>12</pointsize>
@@ -82,7 +79,7 @@
     </widget>
    </item>
    <item>
-    <widget class="QPushButton" name="detail">
+    <widget class="QPushButton" name="nut_chi_tiet">
      <property name="minimumSize">
       <size>
        <width>200</width>
@@ -97,10 +94,6 @@
      </property>
      <property name="text">
       <string>Click to see details</string>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normaloff>../assets/imgs/images (1).jpg</normaloff>../assets/imgs/images (1).jpg</iconset>
      </property>
     </widget>
    </item>

@@ -44,9 +44,9 @@
 }
 </string>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
+   <layout class="QVBoxLayout" name="bo_cuc_doc">
     <item>
-     <widget class="QLabel" name="result_title">
+     <widget class="QLabel" name="tieu_de_ket_qua">
       <property name="minimumSize">
        <size>
         <width>0</width>
@@ -70,7 +70,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QListWidget" name="search_list">
+     <widget class="QListWidget" name="danh_sach_ket_qua">
       <property name="maximumSize">
        <size>
         <width>484</width>

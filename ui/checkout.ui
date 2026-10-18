@@ -47,9 +47,9 @@ QPushButton:hover {
 }
 </string>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
+   <layout class="QVBoxLayout" name="bo_cuc_doc">
     <item>
-     <widget class="QLabel" name="label">
+     <widget class="QLabel" name="tieu_de">
       <property name="minimumSize">
        <size>
         <width>0</width>
@@ -82,10 +82,10 @@ QPushButton:hover {
      </widget>
     </item>
     <item>
-     <widget class="QWidget" name="widget" native="true">
-      <layout class="QVBoxLayout" name="verticalLayout_2">
+     <widget class="QWidget" name="khung_thong_tin" native="true">
+      <layout class="QVBoxLayout" name="bo_cuc_thong_tin">
        <item>
-        <widget class="QLabel" name="label_2">
+        <widget class="QLabel" name="nhan_ho_ten">
          <property name="font">
           <font>
            <family>Arial Black</family>
@@ -97,7 +97,7 @@ QPushButton:hover {
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="Name">
+        <widget class="QLineEdit" name="o_ho_ten">
          <property name="minimumSize">
           <size>
            <width>456</width>
@@ -113,7 +113,7 @@ QPushButton:hover {
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_3">
+        <widget class="QLabel" name="nhan_email">
          <property name="font">
           <font>
            <family>Arial Black</family>
@@ -125,7 +125,7 @@ QPushButton:hover {
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="Email">
+        <widget class="QLineEdit" name="o_email">
          <property name="minimumSize">
           <size>
            <width>456</width>
@@ -141,7 +141,7 @@ QPushButton:hover {
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_4">
+        <widget class="QLabel" name="nhan_dia_chi">
          <property name="font">
           <font>
            <family>Arial Black</family>
@@ -153,7 +153,7 @@ QPushButton:hover {
         </widget>
        </item>
        <item>
-        <widget class="QTextEdit" name="Shipping_address">
+        <widget class="QTextEdit" name="o_dia_chi">
          <property name="maximumSize">
           <size>
            <width>16777215</width>
@@ -170,7 +170,7 @@ p, li { white-space: pre-wrap; }
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_5">
+        <widget class="QLabel" name="nhan_thanh_pho">
          <property name="font">
           <font>
            <family>Arial Black</family>
@@ -182,7 +182,7 @@ p, li { white-space: pre-wrap; }
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="City">
+        <widget class="QLineEdit" name="o_thanh_pho">
          <property name="minimumSize">
           <size>
            <width>456</width>
@@ -198,7 +198,7 @@ p, li { white-space: pre-wrap; }
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_6">
+        <widget class="QLabel" name="nhan_ma_buu_dien">
          <property name="font">
           <font>
            <family>Arial Black</family>
@@ -210,7 +210,7 @@ p, li { white-space: pre-wrap; }
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="Postal_code">
+        <widget class="QLineEdit" name="o_ma_buu_dien">
          <property name="minimumSize">
           <size>
            <width>456</width>
@@ -229,7 +229,20 @@ p, li { white-space: pre-wrap; }
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="place_order">
+     <widget class="QLabel" name="tong_tien">
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Total: </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="nut_dat_hang">
       <property name="font">
        <font>
         <family>Arial Black</family>
@@ -240,6 +253,21 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="text">
        <string> PLACE ORDER</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="nut_quay_lai">
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>-1</pointsize>
+        <weight>87</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>BACK TO CART</string>
       </property>
      </widget>
     </item>

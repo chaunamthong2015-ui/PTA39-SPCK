@@ -63,9 +63,9 @@ QPushButton:hover {
 }
 </string>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
+   <layout class="QVBoxLayout" name="bo_cuc_doc">
     <item>
-     <widget class="QLabel" name="title">
+     <widget class="QLabel" name="tieu_de">
       <property name="maximumSize">
        <size>
         <width>16777215</width>
@@ -86,7 +86,7 @@ QPushButton:hover {
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="label_2">
+     <widget class="QLabel" name="nhan_email">
       <property name="minimumSize">
        <size>
         <width>135</width>
@@ -114,7 +114,7 @@ QPushButton:hover {
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="email">
+     <widget class="QLineEdit" name="o_email">
       <property name="minimumSize">
        <size>
         <width>780</width>
@@ -128,7 +128,7 @@ QPushButton:hover {
        </size>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: #fffff ;
+       <string notr="true">background-color: #ffffff;
 </string>
       </property>
       <property name="inputMask">
@@ -149,7 +149,7 @@ QPushButton:hover {
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="label_3">
+     <widget class="QLabel" name="nhan_mat_khau">
       <property name="minimumSize">
        <size>
         <width>150</width>
@@ -177,7 +177,7 @@ QPushButton:hover {
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="password">
+     <widget class="QLineEdit" name="o_mat_khau">
       <property name="minimumSize">
        <size>
         <width>780</width>
@@ -211,7 +211,7 @@ QPushButton:hover {
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="login">
+     <widget class="QPushButton" name="nut_dang_nhap">
       <property name="minimumSize">
        <size>
         <width>778</width>
@@ -244,7 +244,7 @@ QPushButton:hover {
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="nav_register">
+     <widget class="QPushButton" name="nut_chuyen_dang_ky">
       <property name="minimumSize">
        <size>
         <width>778</width>

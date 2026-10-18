@@ -1,82 +1,72 @@
+# ==========================================================
+# details.py - Trang CHI TIẾT món hàng (ui/details.ui)
+# ==========================================================
 from PyQt6.QtWidgets import QMainWindow, QMessageBox
 from PyQt6.QtGui import QPixmap
+from PyQt6.QtCore import Qt
 from PyQt6 import uic
+import os
+
+from entities.users import QuanLyNguoiDung
 
 
-class DetailsPage(QMainWindow):
-    def __init__(self, main_window, root_dir, cur_acc, product_data):
+class TrangChiTiet(QMainWindow):
+    def __init__(self, cua_so_chinh, thu_muc_goc, tai_khoan, san_pham):
         super().__init__()
-        self.main_window = main_window
-        self.root_dir = root_dir
-        self.cur_acc = cur_acc
-        self.product_data = product_data  # ✅ Lưu lại để dùng trong các hàm khác
+        self.cua_so_chinh = cua_so_chinh
+        self.thu_muc_goc = thu_muc_goc
+        self.tai_khoan = tai_khoan
+        self.san_pham = san_pham  # 1 object SanPham
 
-        # ✅ Sửa lỗi: file UI tên là details.ui (không phải details1.ui)
-        # Kiểm tra lại tên file thật trong thư mục /ui/ của bạn nhé!
-        ui_path = self.root_dir + "/ui/details.ui"
-        uic.loadUi(ui_path, self)
+        duong_dan_ui = os.path.join(self.thu_muc_goc, "ui", "details.ui")
+        uic.loadUi(duong_dan_ui, self)
 
-        # Hiển thị nội dung sản phẩm lên UI
-        self.set_product_info()
+        self.hien_thi_thong_tin()
 
-        # Gắn sự kiện nút BUY
-        self.buy_btn.clicked.connect(self.handle_buy)
+        # nút ADD TO CART -> thêm vào giỏ hàng
+        self.nut_them_gio_hang.clicked.connect(self.them_vao_gio_hang)
 
         self.show()
 
     # ------------------ xử lý sự kiện ------------------
-    def set_product_info(self):
-        # ✅ Hiển thị ảnh
-        pixmap = QPixmap(self.product_data["img"])
-        if not pixmap.isNull():
-            # scale ảnh vừa khít kích thước label (481x301) giữ tỉ lệ
-            # Qt.AspectRatioMode.KeepAspectRatio: giữ tỉ lệ, không méo ảnh
-            from PyQt6.QtCore import Qt
-
-            scaled = pixmap.scaled(
-                481,
-                301,
+    def hien_thi_thong_tin(self):
+        # ảnh: giữ đúng tỉ lệ (KeepAspectRatio), co giãn mượt (SmoothTransformation)
+        duong_dan_anh = os.path.join(self.thu_muc_goc, self.san_pham.lay_hinh_anh())
+        anh = QPixmap(duong_dan_anh)
+        if not anh.isNull():
+            anh_nho = anh.scaled(
+                481, 301,
                 Qt.AspectRatioMode.KeepAspectRatio,
                 Qt.TransformationMode.SmoothTransformation,
-                # SmoothTransformation: scale mượt hơn (dùng anti-aliasing)
-                # FastTransformation: nhanh hơn nhưng ảnh có thể bị răng cưa
             )
-            self.img.setPixmap(scaled)
-        else:
-            print(f"[WARN] Không load được ảnh: {self.product_data['img']}")
+            self.hinh_anh.setPixmap(anh_nho)
 
-        # ✅ Hiển thị mô tả
-        self.description.setText(self.product_data["details"])
+        self.ten_san_pham.setText(self.san_pham.lay_ten())
+        self.gia.setText(f"Giá: {self.san_pham.lay_gia_hien_thi()}")
+        self.mo_ta.setText(self.san_pham.lay_mo_ta())
+        self.nguoi_dang.setText(f"Bởi: {self.san_pham.lay_nguoi_dang()}")
+        self.ngay_dang.setText(f"Ngày đăng bán: {self.san_pham.lay_ngay_dang()}")
 
-        # ✅ Hiển thị người đăng — thêm prefix "Bởi: " cho rõ nghĩa
-        self.created_by.setText(f"Bởi: {self.product_data['created_by']}")
+        # tiêu đề cửa sổ = tên món hàng
+        self.setWindowTitle(self.san_pham.lay_ten())
 
-        # ✅ Hiển thị ngày đăng bán
-        # product_data["created_at"] là kiểu date(2026, 6, 21)
-        # .strftime(): format ngày thành chuỗi theo định dạng tuỳ chọn
-        # %d = ngày (21), %m = tháng (06), %Y = năm (2026)
-        ngay = self.product_data["created_at"].strftime("%d/%m/%Y")
-        self.created_at.setText(f"Ngày đăng bán: {ngay}")
-
-        # ✅ Hiển thị tiêu đề cửa sổ = tên sản phẩm (tuỳ chọn, nhìn chuyên nghiệp hơn)
-        self.setWindowTitle(self.product_data["name"])
-
-    def handle_buy(self):
-        # ✅ Kiểm tra đăng nhập trước khi mua
-        if self.cur_acc is None:
-            self.show_message("Bạn cần đăng nhập để mua hàng!")
+    def them_vao_gio_hang(self):
+        if self.tai_khoan is None:
+            self.hien_thong_bao("Bạn cần đăng nhập để mua hàng!")
             return
 
-        # TODO: thêm logic mua hàng thật (gọi API, lưu đơn hàng, v.v.)
-        ten = self.product_data["name"]
-        gia = self.product_data["price"]
-        self.show_message(f"Đặt mua thành công!\n\n{ten}\nGiá: {gia}")
+        # 1. thêm món vào giỏ của người dùng
+        self.tai_khoan.them_vao_gio(self.san_pham.lay_ma())
+        # 2. lưu người dùng (có giỏ hàng mới) vào users.json
+        QuanLyNguoiDung().sua_nguoi_dung(self.tai_khoan)
+
+        self.hien_thong_bao(f"Đã thêm '{self.san_pham.lay_ten()}' vào giỏ hàng!")
 
     # ------------------ hàm hỗ trợ ------------------
-    def show_message(self, message):
-        msg = QMessageBox()
-        msg.setWindowTitle("Thông báo")
-        msg.setText(message)
-        msg.setIcon(QMessageBox.Icon.Information)
-        msg.setStandardButtons(QMessageBox.StandardButton.Ok)
-        msg.exec()
+    def hien_thong_bao(self, noi_dung):
+        hop_thoai = QMessageBox()
+        hop_thoai.setWindowTitle("Thông báo")
+        hop_thoai.setText(noi_dung)
+        hop_thoai.setIcon(QMessageBox.Icon.Information)
+        hop_thoai.setStandardButtons(QMessageBox.StandardButton.Ok)
+        hop_thoai.exec()

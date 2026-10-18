@@ -1,56 +1,62 @@
-from PyQt6.QtWidgets import QMainWindow, QMessageBox
-import sys
+# ==========================================================
+# account.py - Trang TÀI KHOẢN (ui/account.ui)
+# ==========================================================
+from PyQt6.QtWidgets import QMainWindow
 from PyQt6 import uic
 import os
-import re
 
 
-class AccountPage(QMainWindow):
-    def __init__(self, main_window, root_dir, cur_acc):
+class TrangTaiKhoan(QMainWindow):
+    def __init__(self, cua_so_chinh, thu_muc_goc, tai_khoan):
         super().__init__()
-        self.main_window = main_window
-        self.root_dir = root_dir
-        self.cur_acc = cur_acc
+        self.cua_so_chinh = cua_so_chinh
+        self.thu_muc_goc = thu_muc_goc
+        self.tai_khoan = tai_khoan
 
-        # load file ui
-        ui_path = self.root_dir + "/ui/account.ui"
-        uic.loadUi(ui_path, self)
+        duong_dan_ui = os.path.join(self.thu_muc_goc, "ui", "account.ui")
+        uic.loadUi(duong_dan_ui, self)
 
-        self.title.setText(f"Account: {self.cur_acc}")
+        # hiện thông tin tài khoản
+        self.thong_tin_tai_khoan.setText(
+            f"Họ tên: {self.tai_khoan.lay_ho_ten()}   |   Email: {self.tai_khoan.lay_email()}"
+        )
 
-        # bat su kien cho cac nut bam
-        self.home.clicked.connect(self.goto_home)
-        self.logout.clicked.connect(self.goto_login)
+        # bắt sự kiện cho các nút
+        self.nut_trang_chu.clicked.connect(self.chuyen_trang_chu)
+        self.nut_gio_hang.clicked.connect(self.chuyen_trang_gio_hang)
+        self.nut_lich_su.clicked.connect(self.chuyen_trang_lich_su)
+        self.nut_dang_xuat.clicked.connect(self.chuyen_trang_dang_nhap)
 
-        # hien thi giao dien
         self.show()
 
-    # ------------------ xu ly su kien ------------------
-    def goto_home(self):
-        from pages.home import HomePage
+    # ------------------ chuyển trang ------------------
+    def chuyen_trang_chu(self):
+        from pages.home import TrangChu
 
-        self.home_page = HomePage(
-            main_window=self.main_window, root_dir=self.root_dir, cur_acc=self.cur_acc
+        self.trang_chu = TrangChu(
+            cua_so_chinh=self.cua_so_chinh, thu_muc_goc=self.thu_muc_goc, tai_khoan=self.tai_khoan
         )
-        self.close()  # ✅ đóng cửa sổ
+        self.close()
 
-    def goto_login(self):
+    def chuyen_trang_gio_hang(self):
+        from pages.gio_hang import TrangGioHang
+
+        self.trang_gio_hang = TrangGioHang(
+            cua_so_chinh=self.cua_so_chinh, thu_muc_goc=self.thu_muc_goc, tai_khoan=self.tai_khoan
+        )
+        self.close()
+
+    def chuyen_trang_lich_su(self):
+        from pages.lich_su import TrangLichSu
+
+        self.trang_lich_su = TrangLichSu(
+            cua_so_chinh=self.cua_so_chinh, thu_muc_goc=self.thu_muc_goc, tai_khoan=self.tai_khoan
+        )
+        self.close()
+
+    def chuyen_trang_dang_nhap(self):
+        # đăng xuất -> về trang đăng nhập
         from pages.login import LoginPage
 
-        self.login_page = LoginPage(
-            main_window=self.main_window, root_dir=self.root_dir
-        )
-        self.close()  # ✅ đóng cửa sổ
-
-    # ------------------ ham ho tro ------------------
-    def show_message(self, message):
-        # Khởi tạo hộp thoại thông báo
-        msg = QMessageBox()
-        msg.setWindowTitle("Thông báo")
-        msg.setText(message)
-        msg.setIcon(
-            QMessageBox.Icon.Information
-        )  # Các icon mặc định: Information, Warning, Critical, Question
-        msg.setStandardButtons(QMessageBox.StandardButton.Ok)  # Nút bấm OK
-        # Hiển thị hộp thoại
-        msg.exec()
+        self.trang_dang_nhap = LoginPage(main_window=self.cua_so_chinh, root_dir=self.thu_muc_goc)
+        self.close()

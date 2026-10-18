@@ -47,9 +47,9 @@ QPushButton:hover {
 }
 </string>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
+   <layout class="QVBoxLayout" name="bo_cuc_doc">
     <item>
-     <widget class="QLabel" name="img">
+     <widget class="QLabel" name="hinh_anh">
       <property name="minimumSize">
        <size>
         <width>481</width>
@@ -66,12 +66,41 @@ QPushButton:hover {
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../assets/imgs/images (1).jpg</pixmap>
+       <pixmap>../assets/imgs/image_1.jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="description">
+     <widget class="QLabel" name="ten_san_pham">
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>18</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Tên món hàng</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="gia">
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Giá</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="mo_ta">
       <property name="font">
        <font>
         <family>Arial Black</family>
@@ -84,7 +113,7 @@ QPushButton:hover {
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="created_by">
+     <widget class="QLabel" name="nguoi_dang">
       <property name="font">
        <font>
         <family>Arial Black</family>
@@ -97,7 +126,7 @@ QPushButton:hover {
      </widget>
     </item>
     <item>
-     <widget class="QLabel" name="created_at">
+     <widget class="QLabel" name="ngay_dang">
       <property name="font">
        <font>
         <family>Arial Black</family>
@@ -110,17 +139,16 @@ QPushButton:hover {
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="buy_btn">
+     <widget class="QPushButton" name="nut_them_gio_hang">
       <property name="font">
        <font>
-        <family>Arial Black</family>
         <pointsize>-1</pointsize>
         <weight>87</weight>
         <bold>true</bold>
        </font>
       </property>
       <property name="text">
-       <string>BUY</string>
+       <string>ADD TO CART</string>
       </property>
      </widget>
     </item>

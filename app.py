@@ -3,11 +3,7 @@ import sys
 from PyQt6 import uic
 import os
 
-# from pages.login import LoginPage # trang dau tien truy cap
-from pages.login import LoginPage 
-from entities.user import User
-
-
+from pages.login import LoginPage  # trang dau tien truy cap
 
 # lay duong dan den cac file con
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
